@@ -45,4 +45,6 @@ console.log(now - 1992 < now - 1990);
 const now = 2023;
 const ageHalil = now - 1992;
 const ageOzan = now - 1990;
+
 console.log(now - 1992 < now - 1990);
+
