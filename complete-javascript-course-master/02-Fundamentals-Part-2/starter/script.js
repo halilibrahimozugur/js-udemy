@@ -114,5 +114,68 @@ const yearsUntilRetirement = function (birthYeah, firstName) {
 
 console.log(yearsUntilRetirement(1991, 'Jonas'));
 console.log(yearsUntilRetirement(1950, 'Mike'));
+
+
+
+
+
+// Function olmadan sadece if ile part 2 coding challange 1
+const avTakim1 = (takim1_1 + takim1_2 + takim1_3) / 3;
+const avTakim2 = (takim2_1 + takim2_2 +takim2_3) / 3;
+
+console.log(avTakim1);
+console.log(avTakim2);
+
+if (avTakim1 >= avTakim2*2 || avTakim2 >= avTakim1*2) {
+  if (avTakim1 > avTakim2){
+    console.log('1. Takım Yendi');
+  } else {
+    console.log('2. Takım Yendi');
+  }
+} else {
+  console.log('Kimse Yenemedi');
+}
+
+// Function ve if ile part 2 coding challange 1
+const [takim1_1, takim1_2, takim1_3] = [45, 67, 77];
+const [takim2_1, takim2_2, takim2_3] = [45, 55, 77];
+
+const avTakims = () => {
+  const avTakim1 = (takim1_1 + takim1_2 + takim1_3) / 3;
+  const avTakim2 = (takim2_1 + takim2_2 + takim2_3) / 3;
+  if (avTakim1 >= avTakim2*2 || avTakim2 >= avTakim1*2) {
+    if (avTakim1 > avTakim2){
+      console.log('1. Takım Yendi');
+    } else {
+      console.log('2. Takım Yendi');
+    }
+  } else {
+    console.log('Kimse Yenemedi');
+  }
+}
+
+avTakims();
+
+
+// Function ve if ile part 2 coding challange 1
+
+const calcAverage = (a, b, c) => (a + b + c) / 3;
+console.log(calcAverage(56,55,89));
+
+const scoreDolphin = calcAverage(44, 23, 71);
+const scoreKoalas = calcAverage(65, 54, 459);
+console.log(scoreDolphin, scoreKoalas);
+
+const checkWinner = function(avgDolphins, avgKoalas) {
+  if (avgDolphins >= 2 * avgKoalas) {
+    console.log(`Dolphins win throphy (${avgDolphins}) vs. ${avgKoalas}`);
+  } else if (avgKoalas >= 2 * avgDolphins) {
+    console.log(`Koalas win throphy (${avgKoalas}) vs. (${avgDolphins})`);
+  } else {
+    console.log('kimse yenemedi');
+  }
+}
+checkWinner(scoreDolphin, scoreKoalas);
+checkWinner(2, 4);
 */
 
