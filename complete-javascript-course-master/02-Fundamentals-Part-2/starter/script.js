@@ -267,4 +267,45 @@ const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 
 console.log(bills, tips, totals);
 
+
+
+// Objects
+
+const halil = {
+  firstName: 'Halil',
+  lastName: 'Özuğur',
+  age: 30,
+  job: 'Cli.Psy.',
+  friends: ['Duygu', 'Ozan', 'Fatih']
+};
+console.log(halil);
+console.log(halil.job);
+console.log(halil['job']);
+
+const nameKey = 'Name';
+console.log(halil['first' + nameKey]);
+console.log(halil['last' + nameKey]);
+
+const interestedIN = prompt('What do you want to know about Halil? Choose between firstName, lastName, age, job and friends');
+
+if (halil[interestedIN]) {
+  console.log(halil[interestedIN]);
+} else {
+  console.log('lütfen geçerli bir değer girin');
+}
+
+halil.location = 'Ankara';
+halil['universite'] = 'Hacettepe';
+console.log(halil);
+
+
+
+const halil = {
+  firstName: 'Halil',
+  friendNumber: 3,
+  friend: ['Duygu', 'Ozan', 'Fatih']
+}
+
+console.log(`${halil.firstName} has ${halil.friend.length} and his best friend is called ${halil.friend[0]}`);
+
 */
