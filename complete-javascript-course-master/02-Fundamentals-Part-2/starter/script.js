@@ -308,4 +308,34 @@ const halil = {
 
 console.log(`${halil.firstName} has ${halil.friend.length} and his best friend is called ${halil.friend[0]}`);
 
+
+// Objects Methods
+const halil = {
+  firstName: 'Halil',
+  lastName: 'Özuğur',
+  birthYear: 1992,
+  age: 30,
+  job: 'Cli.Psy.',
+  friends: ['Duygu', 'Ozan', 'Fatih'],
+  hasDriversLicense: true,
+  thisYear: 2023,
+
+  calcAge: function () {
+    console.log();
+    return this.thisYear - this.birthYear;
+
+  calcAge: function () {
+    this.age = this.thisYear - this.birthYear;
+    return this.age;
+  },
+
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()} year old ${this.job} and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`;
+  }
+};
+
+console.log(halil.calcAge());
+console.log(halil['calcAge'](1992));
+console.log(halil.getSummary());
+
 */
