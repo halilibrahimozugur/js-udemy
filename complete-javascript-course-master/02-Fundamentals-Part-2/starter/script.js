@@ -309,6 +309,35 @@ const halil = {
 console.log(`${halil.firstName} has ${halil.friend.length} and his best friend is called ${halil.friend[0]}`);
 
 
+// Coding Challenge #3
+const mark = {
+  fullname: 'Mark Miller',
+  mass: 78,
+  height: 1.69,
+  calcBMI: function() {
+    return this.mass / this.height ** 2;
+  }
+}
 
+const john = {
+  fullname: 'John Smith',
+  mass: 92,
+  height: 1.95,
+  calcBMI: function() {
+    return this.mass / this.height ** 2;
+  }
+}
+
+if (mark.calcBMI() > john.calcBMI()) {
+  console.log(`${mark.fullname}'in BMI'i (${mark.calcBMI()}) ${john.fullname}'un BMI'inden (${john.calcBMI()}) büyüktür`)
+} else if (mark.calcBMI() < john.calcBMI()){
+  console.log(`${john.fullname}'in BMI'i (${john.calcBMI()}) ${mark.fullname}'un BMI'inden (${mark.calcBMI()}) büyüktür`)
+} else {
+  console.log(`${john.fullname}'in BMI'i (${john.calcBMI()}) ${mark.fullname}'un BMI'ına (${mark.calcBMI()}) eşittir`)
+}
+
+// consol sonuç: Mark Miller'in BMI'i (27.309968138370508) John Smith'un BMI'inden (24.194608809993426) büyüktür
+
+*/
 
 
