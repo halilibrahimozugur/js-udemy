@@ -338,6 +338,58 @@ if (mark.calcBMI() > john.calcBMI()) {
 
 // consol sonuç: Mark Miller'in BMI'i (27.309968138370508) John Smith'un BMI'inden (24.194608809993426) büyüktür
 
+
+
+// for loop keeps running while condition is true
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weights repetition ${rep}`);
+}
+
+
+// örnek 1
+const halil = [
+  'Halil',
+  'Özuğur',
+  30,
+  'Cli.Psy.',
+  ['Duygu', 'Ozan', 'Fatih']
+];
+
+const types = [];
+
+for(let i = 0; i < halil.length; i++) {
+  console.log(halil[i], typeof halil[i]);
+
+  //types[i] = typeof halil[i];
+  types.push(typeof halil[i]);
+}
+
+console.log(types);
+// örnek 2
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2037 - years[i]);
+}
+
+console.log(ages);
+
+// continue and break - loop
+
+console.log('ONLY Strings-------');
+for(let i = 0; i < halil.length; i++) {
+  if (typeof halil[i] !== 'string') continue
+
+  console.log(halil[i], typeof halil[i]);
+}
+
+console.log('Break With Number-------');
+for(let i = 0; i < halil.length; i++) {
+  if (typeof halil[i] === 'number') break
+
+  console.log(halil[i], typeof halil[i]);
+}
+
 */
-
-
